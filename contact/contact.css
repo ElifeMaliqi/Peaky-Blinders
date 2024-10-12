@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --color1: #181818;
+    --color2: #232323;
+    --color3: #343434;
+    --color4: #464646;
+    --color5: #575757;
+    --color6: #8d8d8d;
+    --color7: #ffb298;
+    --color8: #754224;
+    --gradient: linear-gradient(to bottom right, var(--color2), var(--color4));
+    --gradient2: linear-gradient(to bottom right, var(--color8), var(--color7));
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    background-image: var(--gradient);
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    background-image: url(../assets/images/Peaky\ Blinders\ .jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid var(--color6) 1px;
+    border-radius: 50px;
+    margin: 50px;
+    padding: 0;
+    max-width: 800px;
+    min-width: 750px;
+    overflow: hidden;
+    box-shadow: #181818 10px 15px 25px;
+    transition: 0.5s ease;
+}
+
+.container:hover{
+    transform: translateY(-10px);
+    box-shadow: #181818 5px 25px 25px;
+    border: solid var(--color6) 2px;
+}
+
+.nav{
+    float: left;
+    backdrop-filter: blur(10px); /* Adjust the blur intensity */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+ul{
+    list-style-type: none;
+    display: block;
+    padding: 5px;
+    margin: 10px;
+}
+
+li{
+    padding: 15px;
+    border-bottom: solid 1px var(--color8);
+}
+
+li i{
+    text-shadow: 0px 0px 10px #a9a9a9;
+}
+
+ul li a{
+    color: white;
+}
+
+#bonus{
+    margin-top: 160px;
+    border-bottom: none;
+    border-top: solid 1px var(--color8);
+}
+
+.content{
+    text-align: right;
+    padding: 10px 30px 0 auto;
+    padding: 0 30px 0 10px;
+    width: 100%;
+}
+
+.form{
+    margin: 20px;
+    text-align: left;
+}
+
+.form input{
+    padding: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px var(--color7);
+    width: 180px;
+    transition: 0.5s ease;
+}
+
+.form input:focus{
+    color: white;
+    width: 200px;
+    outline: none;
+}
+
+.form textarea{
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px var(--color7);
+    width: 180px;
+    transition: 0.5s ease;
+}
+
+.form textarea:focus{
+    color: white;
+    width: 200px;
+    outline: none;
+}
+
+.form label{
+    display: block;
+    margin: 5px;
+    text-shadow: 0px 0px 10px white;
+    transform: translateY(10px);
+}
+
+button{
+    position: absolute;
+    top: 200px;
+    right: 90px;
+    margin: 30px;
+    background: rgba(255, 178, 152, 0.2);
+    border: solid 1px rgba(255, 178, 152, 1);
+    color: white;
+    font-size: 15px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    padding: 15px 65px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #ffb298;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px #ffb298;
+}
