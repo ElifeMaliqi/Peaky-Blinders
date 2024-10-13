@@ -35,7 +35,7 @@ body {
 .container {
     display: flex;
     position: relative;
-    background-image: url(../assets/images/PeakyBlinders-social.jpg);
+    background-image: url(../assets/images/PeakyBlinders-cast.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
